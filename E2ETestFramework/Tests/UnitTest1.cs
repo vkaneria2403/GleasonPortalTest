@@ -1,4 +1,4 @@
-namespace E2ETestFramework
+namespace E2ETestFramework.Tests
 {
     public class UnitTest1
     {

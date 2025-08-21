@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="TestData\" />
-    <Folder Include="Tests\" />
     <Folder Include="Utilities\" />
     <Folder Include="Pages\" />
   </ItemGroup>
