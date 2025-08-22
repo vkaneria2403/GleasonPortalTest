@@ -3,11 +3,8 @@ using OpenQA.Selenium;
 
 namespace E2ETestFramework.Pages
 {
-    public class LoginPage : BasePage
+    public class LoginPage(IWebDriver driver) : BasePage(driver)
     {
-        // The constructor accepts the IWebDriver from the DI container and passes it to the BasePage.
-        public LoginPage(IWebDriver driver) : base(driver) { }
-
         private readonly By _usernameField = By.CssSelector("input[id='username']");
         private readonly By _passwordField = By.CssSelector("input[id='password']");
         private readonly By _loginButton = By.CssSelector("button[type='submit']");

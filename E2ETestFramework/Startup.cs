@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using OpenQA.Selenium;
 using E2ETestFramework.Utilities;
+using E2ETestFramework.Pages;
 
 namespace E2ETestFramework
 {
@@ -17,7 +18,7 @@ namespace E2ETestFramework
             services.AddScoped<IWebDriver>(provider => BrowserFactory.CreateDriver(provider.GetRequiredService<TestSettings>()));
 
             // 3. Page Object Registration
-            //services.AddScoped<LoginPage>();
+            services.AddScoped<LoginPage>();
         }
     }
 }
