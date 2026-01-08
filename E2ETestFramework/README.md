@@ -32,8 +32,8 @@ Since this project uses **User Secrets** to protect credentials, the project wil
 
 ### Step 1: Clone and Restore
 ```bash
-git clone <repo-url>
-cd E2ETestFramework
+git clone https://github.com/vkaneria2403/GleasonPortalTest.git
+cd GleasonPortalTest/E2ETestFramework
 dotnet restore
 ```
 
