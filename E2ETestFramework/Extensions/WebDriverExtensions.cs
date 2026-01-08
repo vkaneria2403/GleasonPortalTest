@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 
-namespace E2ETestFramework.Utilities
+namespace E2ETestFramework.Extensions
 {
     public static class WebDriverExtensions
     {
@@ -21,6 +21,12 @@ namespace E2ETestFramework.Utilities
         {
             var element = wait.Until(ExpectedConditions.ElementIsVisible(locator));
             element.Click();
+        }
+
+        public static bool IsDisplayed(this WebDriverWait wait, By locator)
+        {
+            var element = wait.Until(ExpectedConditions.ElementIsVisible(locator));
+            return element.Displayed;
         }
     }
 }

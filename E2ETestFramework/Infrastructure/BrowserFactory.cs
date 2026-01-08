@@ -2,8 +2,9 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using E2ETestFramework.Configuration;
 
-namespace E2ETestFramework.Utilities
+namespace E2ETestFramework.Infrastructure
 {
     public static class BrowserFactory
     {

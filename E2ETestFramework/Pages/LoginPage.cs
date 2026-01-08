@@ -1,4 +1,4 @@
-﻿using E2ETestFramework.Utilities;
+﻿using E2ETestFramework.Extensions;
 using OpenQA.Selenium;
 
 namespace E2ETestFramework.Pages
