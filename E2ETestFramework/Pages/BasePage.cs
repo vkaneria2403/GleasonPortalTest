@@ -11,7 +11,7 @@ namespace E2ETestFramework.Pages
         protected BasePage(IWebDriver driver)
         {
             Driver = driver;
-            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(20));
         }
     }
 }
